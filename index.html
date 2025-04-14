@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina la palabra</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="game-container">
+            <h1 class="title">🏎️ Adivina la marca de coches 🤫</h1>
+            <p class="subtitle">Tienes 3 intentos para adivinar cual es la marca de coches.</p>
+            
+            <button class="pista-button" id="pista-button">¡Pista!</button>
+            <dialog id="pista-modal" class="pista-modal">
+                <p id="pista-text" class="pista-text">Aqui te va una pequeña pista: El nombre de la marca inicia con la letra " <span class="pista" id="pista"></span> "</p>
+                <button class="cerrar-pista" id="cerrar-pista">Cerrar</button>
+            </dialog>
+
+            <p class="win" id="win">🎉 Felicidades, has encontraste la palabra oculta. Toma una galleta 🍪.</p>
+
+            <div class="input-container">
+                <input type="text" id="word-input" class="word-input" placeholder="Ingresa la palabra secreta">
+                <button class="check-button" id="check-button">Revisar</button>
+            </div>
+
+            <p class="message" id="message"></p>
+            <button class="reset-button" id="reset">Reiniciar</button>
+        </div>
+    </div>
+
+    <script src="index.js">
+    </script>
+</body>
+</html>
