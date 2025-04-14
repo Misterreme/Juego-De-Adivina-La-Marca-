@@ -114,6 +114,6 @@ function generarPalabra() {
     ];
     const randomIndex = Math.floor(Math.random() * palabras.length);
     // return palabras[randomIndex];
-    console.log(palabras[randomIndex])
+    // console.log(palabras[randomIndex])
     return palabras[randomIndex];
 }
